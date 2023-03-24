@@ -1,0 +1,15 @@
+{
+  "name": "automated-login",
+  "version": "1.0.0",
+  "description": "Automatic Login using Node and Selenium.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Naman Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^111.0.0",
+    "selenium-webdriver": "^4.8.1"
+  }
+}
