@@ -1,0 +1,23 @@
+[
+  {
+    "action": "open",
+    "args": {
+      "url": "https://www.example.com"
+    }
+  },
+  {
+    "action": "clickOnLink",
+    "args": {
+      "linkText": "More information..."
+    }
+  },
+  {
+    "action": "savePage",
+    "args": {
+      "filePath": "./savedpages/clicked_page.html"
+    }
+  },
+  {
+    "action": "close"
+  }
+]

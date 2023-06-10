@@ -1,0 +1,8 @@
+{
+    "url":"https://github.com/login",
+    "auth_req":"true",
+    "credentials":{"user":"Namanstakkdev","pass":"naman.stakkdev@gmail.com"},
+    "clicks":{"no_of_clicks":4,"xpaths_arr":["/html/body/div[1]/div[3]/main/div/div[4]/form/div/input[11]","/html/body/div[1]/div[6]/div/aside/div/loading-context/div/div[1]/div/ul/li[1]/div/div/a","/html/body/div[1]/div[1]/header/div[7]/details","/html/body/div[1]/div[1]/header/div[7]/details/details-menu/form/button"]},
+    "screenshot":2,
+    "savewebpage":3
+}

@@ -1,24 +1,26 @@
-# os module for saving the webpage
+from dotenv import load_dotenv
+import logging
 import os
 import time
-# Setting up the chrome webdriver
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import codecs
-# import module for logging purposes
-import logging
-from dotenv import load_dotenv
+import json
+
+f = open('structure.json')
+data = json.load(f)
+
+f.close()
+
 load_dotenv()
 
-# fucntion for setting up the logging structure
 driver = webdriver.Chrome()
-# maximize browser
 driver.maximize_window()
 
-username = os.getenv('USER')
-password = os.getenv('PASSWORD')
+username = data["credentials"]["user"]
+password = data["credentials"]["pass"]
 
 
 class access_github:
@@ -28,9 +30,8 @@ class access_github:
         self.password = password
 
     def login(self):
-        # Launch the browser and open the github URL in your web drive
-        # Navigate to the application home page
-        driver.get("https://github.com/login")
+
+        driver.get(data["url"])
         time.sleep(5)
         uname = driver.find_element("id", "login_field")
         uname.send_keys(self.username)
@@ -107,13 +108,13 @@ class access_github:
         print("Logs Generated.")
 
 
-acc = access_github(username, password)
-acc.getlogs()
+# acc = access_github(username, password)
+# acc.getlogs()
 
-acc.login()
-acc.clickRepo()
-acc.saveScreenshot()
-acc.saveWebPage()
-acc.clickMenu()
-acc.logout()
-acc.getlogs()
+# acc.login()
+# acc.clickRepo()
+# acc.saveScreenshot()
+# acc.saveWebPage()
+# acc.clickMenu()
+# acc.logout()
+# acc.getlogs()

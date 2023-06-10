@@ -1,0 +1,8 @@
+{
+    "url":"https://github.com/login",
+    "auth_req":"true",
+    "credentials":{"user":"","pass":""},
+    "clicks":{"no_of_clicks":4,"xpaths_arr":["This would be a array containing xmap values for links to be clicked"]},
+    "screenshot":2,
+    "savewebpage":3
+}
